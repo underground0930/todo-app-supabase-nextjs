@@ -14,7 +14,7 @@ export function reportWebVitals(metric: NextWebVitalsMetric) {
       break
     case 'Next.js-hydration':
       console.log(
-        `Hydration: ${metric.value.toFixed(2)} -> ${Math.round(
+        `Hydration: ${metric.startTime.toFixed(2)} -> ${Math.round(
           metric.startTime + metric.value
         ).toFixed(2)}`
       )
